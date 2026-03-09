@@ -9,11 +9,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Georgia', serif, sans-serif;
         }
 
         body {
-            background-color: #fff9fc;
+            background-color: #ffffff;
             color: #4a4a4a;
         }
 
@@ -22,219 +22,273 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 5%;
+            padding: 1.5rem 5%;
             background: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-bottom: 2px solid #ffe4e9;
             flex-wrap: wrap;
         }
 
-        /* Logo criativa */
+        /* Logo criativa e maior */
         .logo {
             display: flex;
-            align-items: center;
-            gap: 5px;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
         }
 
         .logo-icon {
-            font-size: 2.5rem;
+            font-size: 3.2rem;
             line-height: 1;
-            background: linear-gradient(135deg, #d4af37, #b8860b);
+            background: linear-gradient(145deg, #f8a5b2, #fcd7de);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
-            position: relative;
+            filter: drop-shadow(1px 1px 3px rgba(248, 165, 178, 0.4));
         }
 
         .logo-icon::before {
-            content: "👰";
-            font-size: 2.2rem;
+            content: "👰🏻‍♀️";
+            font-size: 3rem;
             margin-right: 5px;
             background: none;
             -webkit-text-fill-color: initial;
-            color: #b8860b;
+            color: #f8a5b2;
         }
 
         .logo-text {
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 2px;
-            background: linear-gradient(45deg, #8b5a2b, #c9a87c);
+            font-size: 2.6rem; /* maior e mais bonito */
+            font-weight: 400;
+            letter-spacing: 2.5px;
+            background: linear-gradient(45deg, #b85c6b, #f2a0b0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            border-right: 3px solid #e4c5a2;
-            padding-right: 15px;
-            font-family: 'Georgia', serif;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            text-shadow: 2px 2px 10px rgba(248, 165, 178, 0.2);
+            border-right: 2px solid #ffc1cc;
+            padding-right: 20px;
         }
 
         .logo-detail {
-            font-size: 0.9rem;
-            color: #b38b5d;
+            font-size: 1rem;
+            color: #f2a0b0;
             font-style: italic;
-            margin-left: 5px;
+            font-weight: 300;
             align-self: flex-end;
+            margin-bottom: 5px;
         }
 
-        /* Menu e FAQ */
+        /* Menu e FAQ (direita) */
         .nav-menu {
             display: flex;
-            gap: 2rem;
+            gap: 2.2rem;
             align-items: center;
         }
 
         .nav-menu a {
             text-decoration: none;
-            color: #7a5a4a;
+            color: #8f5e6b;
             font-weight: 500;
-            transition: color 0.3s;
-            font-size: 1.1rem;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
         }
 
         .nav-menu a:hover {
-            color: #d4af37;
+            color: #f28b9c;
+            border-bottom-color: #fbb1c0;
         }
 
         .faq-btn {
-            background: #e4d5c0;
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            color: #5e3a2c !important;
+            background: #ffe4e9;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            color: #a55364 !important;
             font-weight: 600;
-            border: 1px solid #c6a27a;
+            border: 1px solid #ffb6c1;
+            font-size: 1.1rem;
         }
 
         .faq-btn:hover {
-            background: #d4af37;
+            background: #f8a5b2;
             color: white !important;
+            border-color: #f28b9c;
         }
 
-        /* Barra de pesquisa esquerda */
+        /* Barra de pesquisa quadrada (esquerda) */
         .search-section {
-            padding: 2rem 5%;
-            background: #fef7f0;
-            border-bottom: 1px dashed #e9d6c1;
+            padding: 2rem 5% 1.5rem;
+            background: white;
         }
 
         .search-wrapper {
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
             max-width: 400px;
             background: white;
-            border-radius: 50px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border: 1px solid #eeddcc;
+            border: 2px solid #ffd9e0;
+            border-radius: 0; /* quadrada */
+            box-shadow: 0 4px 8px rgba(255, 175, 190, 0.1);
         }
 
         .search-wrapper input {
             flex: 1;
-            padding: 0.9rem 1.5rem;
+            padding: 0.9rem 1.2rem;
             border: none;
             background: transparent;
             font-size: 1rem;
             outline: none;
-            color: #5e4b3a;
+            color: #6d4c55;
+        }
+
+        .search-wrapper input::placeholder {
+            color: #f5bac7;
+            font-style: italic;
         }
 
         .search-wrapper button {
-            background: #eaceb0;
+            background: #ffd9e0;
             border: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 50px;
-            margin: 3px;
+            padding: 0 1.5rem;
+            font-size: 1.2rem;
             cursor: pointer;
-            font-size: 1rem;
-            color: #5e3a2c;
+            color: #a55364;
             font-weight: 500;
-            transition: 0.3s;
+            transition: 0.2s;
+            border-left: 2px solid #ffb6c1;
         }
 
         .search-wrapper button:hover {
-            background: #d4af37;
+            background: #f8a5b2;
             color: white;
         }
 
-        /* Galeria de vestidos */
+        /* Sobre (substitui vestidos/acessórios) */
+        .about-section {
+            background: #fff8fa;
+            padding: 2.5rem 5%;
+            margin: 1rem 0;
+            border-top: 2px dashed #ffd0da;
+            border-bottom: 2px dashed #ffd0da;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            font-size: 2.2rem;
+            color: #b85c6b;
+            font-family: 'Georgia', serif;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #735f67;
+            background: rgba(255, 230, 240, 0.7);
+            padding: 2rem;
+            border-radius: 50px 20px 50px 20px;
+            box-shadow: 0 5px 0 #ffd0da;
+        }
+
+        .about-content span {
+            font-size: 2rem;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        /* Galeria com 3 vestidos */
         .gallery {
-            padding: 3rem 5%;
+            padding: 3rem 5% 2rem;
         }
 
         .gallery h2 {
             font-family: 'Georgia', serif;
-            color: #9f7e5c;
-            margin-bottom: 2rem;
-            font-size: 2rem;
+            color: #b85c6b;
+            margin-bottom: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 300;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #eed7c5;
-            padding-bottom: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+            background: #ffeef2;
+            display: inline-block;
+            padding: 0.5rem 3rem;
+            border-radius: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
         }
 
         .dress-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(3, 1fr); /* exatamente 3 colunas */
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .dress-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 30px 30px 20px 20px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #f5e3d4;
+            box-shadow: 0 8px 20px rgba(255, 160, 180, 0.15);
+            transition: 0.3s;
+            border: 1px solid #ffd9e0;
         }
 
         .dress-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(181, 131, 90, 0.15);
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(248, 165, 178, 0.25);
         }
 
         .dress-img {
-            height: 320px;
+            height: 350px;
             background-size: cover;
-            background-position: center top;
+            background-position: center 20%;
             background-repeat: no-repeat;
-            position: relative;
+            background-color: #fff1f5;
+            border-bottom: 3px solid #ffb6c1;
         }
 
-        .dress-img::after {
-            content: "✨";
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 1.8rem;
-            opacity: 0.7;
-            color: #d4af37;
-            text-shadow: 0 0 5px white;
-        }
+        /* Imagens SVG delicadas */
+        .img1 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23ffe7ed"/><ellipse cx="150" cy="130" rx="45" ry="55" fill="%23ffd9e0"/><path d="M110 180 Q150 250 190 180" stroke="%23b85c6b" stroke-width="8" fill="%23ffeef4"/><rect x="125" y="210" width="50" height="150" fill="%23ffc1cc"/><circle cx="150" cy="370" r="22" fill="%23f8a5b2"/><text x="90" y="90" fill="%23b85c6b" font-size="40">🌸</text></svg>'); }
+        .img2 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23fcebf0"/><path d="M135 100 L165 100 L185 300 L115 300 Z" fill="%23ffd2dd"/><circle cx="150" cy="140" r="33" fill="%23ffcbd6"/><rect x="130" y="200" width="40" height="150" fill="%23ffb6c4"/><circle cx="150" cy="360" r="25" fill="%23f297ab"/><text x="190" y="70" fill="%23944e5c" font-size="38">💖</text></svg>'); }
+        .img3 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23ffe4ea"/><ellipse cx="150" cy="120" rx="40" ry="45" fill="%23ffd0da"/><path d="M120 170 Q150 220 180 170" stroke="%23b35467" stroke-width="7" fill="%23ffeef2"/><rect x="135" y="190" width="30" height="170" fill="%23f5a7b7"/><circle cx="150" cy="370" r="23" fill="%23f28b9f"/><text x="70" y="300" fill="%23b35467" font-size="44">✨</text></svg>'); }
 
         .dress-info {
-            padding: 1.5rem;
+            padding: 1.8rem 1.5rem;
             text-align: center;
+            background: white;
         }
 
         .dress-name {
-            font-size: 1.3rem;
-            color: #86644a;
-            margin-bottom: 0.3rem;
-            font-weight: 600;
+            font-size: 1.6rem;
+            color: #b35467;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-family: 'Georgia', serif;
         }
 
         .dress-desc {
-            color: #a28b78;
-            line-height: 1.5;
-            font-size: 0.95rem;
+            color: #8e6b76;
+            line-height: 1.6;
+            font-size: 1.05rem;
+            min-height: 70px;
         }
 
         /* Banner casamento */
         .wedding-banner {
-            margin: 4rem 5%;
-            background: linear-gradient(135deg, #fcf3ea, #fae9db);
-            border-radius: 30px;
+            margin: 3rem 5%;
+            background: #fffafc;
+            border-radius: 40px;
             overflow: hidden;
-            box-shadow: 0 15px 30px rgba(181, 131, 90, 0.1);
-            border: 1px solid #f0dbc9;
+            box-shadow: 0 15px 25px rgba(255, 150, 170, 0.15);
+            border: 2px solid #ffd0da;
         }
 
         .banner-container {
@@ -245,144 +299,146 @@
         .banner-image {
             flex: 1.2;
             min-width: 280px;
-            height: 300px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300"><rect width="400" height="300" fill="%23f9e5d2"/><circle cx="120" cy="120" r="25" fill="%23f0cfb0"/><circle cx="280" cy="120" r="25" fill="%23f0cfb0"/><path d="M150 180 Q200 230 250 180" stroke="%23b38b5d" stroke-width="5" fill="none"/><rect x="170" y="80" width="20" height="50" fill="%23c6a27a"/><rect x="210" y="80" width="20" height="50" fill="%23c6a27a"/><circle cx="200" cy="60" r="20" fill="%23f9d7b0"/><path d="M60 220 L340 220" stroke="%239f7e5c" stroke-width="8" stroke-dasharray="10 10" /><circle cx="70" cy="240" r="8" fill="%23d4af37"/><circle cx="330" cy="240" r="8" fill="%23d4af37"/><text x="150" y="270" font-family="Arial" font-size="18" fill="%2397653d">❤️  Felizes  ❤️</text></svg>');
+            height: 280px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280"><rect width="400" height="280" fill="%23ffe2e9"/><circle cx="120" cy="100" r="25" fill="%23ffb6c1"/><circle cx="280" cy="100" r="25" fill="%23ffb6c1"/><path d="M150 150 Q200 200 250 150" stroke="%23b35467" stroke-width="6" fill="%23ffe2ec"/><rect x="170" y="70" width="20" height="50" fill="%23f5a7b7"/><rect x="210" y="70" width="20" height="50" fill="%23f5a7b7"/><circle cx="200" cy="45" r="25" fill="%23ffe4d8"/><path d="M60 200 L340 200" stroke="%23f28b9f" stroke-width="10" stroke-dasharray="8 8" /><circle cx="80" cy="220" r="10" fill="%23f8a5b2"/><circle cx="320" cy="220" r="10" fill="%23f8a5b2"/><text x="140" y="250" font-family="Georgia" font-size="22" fill="%23944e5c">💒  para sempre  💒</text></svg>');
             background-size: cover;
             background-position: center;
-            border-radius: 30px 0 0 30px;
+            border-radius: 40px 0 0 40px;
         }
 
         .banner-text {
             flex: 1;
-            padding: 2.5rem;
+            padding: 2rem 2.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         .banner-text h3 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-family: 'Georgia', serif;
-            color: #8b5a2b;
-            margin-bottom: 1rem;
+            color: #b35467;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
         }
 
         .banner-text p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #735f4e;
-            max-width: 400px;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: #7c5562;
             font-style: italic;
+            background: #ffedf2;
+            padding: 1.2rem 1.8rem;
+            border-radius: 80px 20px 80px 20px;
         }
 
-        .banner-text p::before {
-            content: "“";
-            font-size: 3rem;
-            color: #eaceb0;
-            font-family: serif;
-            vertical-align: middle;
-        }
-
-        .banner-text p::after {
-            content: "”";
-            font-size: 3rem;
-            color: #eaceb0;
-            font-family: serif;
-            vertical-align: bottom;
-        }
-
-        /* Rodapé */
+        /* Rodapé sem espaços vazios */
         .footer {
-            background: #352d26;
-            color: #f2e1d2;
-            padding: 3rem 5% 2rem;
-            margin-top: 4rem;
-            border-top: 5px solid #b38b5d;
+            background: #fcd7de; /* rosa bebê mais presente */
+            color: #6d3b48;
+            padding: 2.5rem 5% 1.5rem;
+            margin-top: 3rem;
+            border-top: 8px solid #f8a5b2;
+            width: 100%;
         }
 
         .footer-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 2rem;
+            gap: 2rem 4rem;
+        }
+
+        .contact-info, .social-info {
+            flex: 1 1 250px;
         }
 
         .contact-info h4, .social-info h4 {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin-bottom: 1.5rem;
-            color: #eaceb0;
-            font-weight: 400;
+            color: #a53e54;
+            font-weight: 500;
             letter-spacing: 1px;
+            border-left: 6px solid #f28b9f;
+            padding-left: 15px;
         }
 
         .contact-info p {
-            margin: 0.8rem 0;
+            margin: 1rem 0;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
+            gap: 12px;
+            font-size: 1.15rem;
+            color: #5f3d47;
         }
 
         .social-icons {
             display: flex;
-            gap: 1.5rem;
+            gap: 1.8rem;
             font-size: 2rem;
+            margin: 1.5rem 0 2rem;
         }
 
         .social-icons a {
             text-decoration: none;
-            color: #e4d5c0;
-            transition: 0.3s;
-            background: #4e3f35;
-            width: 50px;
-            height: 50px;
+            color: #a53e54;
+            background: white;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+            border: 2px solid #f8a5b2;
         }
 
         .social-icons a:hover {
-            background: #d4af37;
-            color: #2b221c;
-            transform: scale(1.1);
+            background: #f8a5b2;
+            color: white;
+            border-color: white;
+            transform: translateY(-5px);
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            text-align: center;
+            background: #fcebf0;
+            padding: 1.2rem;
+            border-radius: 60px;
+            color: #6d3b48;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         .copyright {
             text-align: center;
-            margin-top: 3rem;
+            margin-top: 2rem;
             padding-top: 1.5rem;
-            border-top: 1px solid #5f4d3e;
-            color: #b9a690;
+            border-top: 2px solid #f8b0bf;
+            color: #7b4b58;
+            font-size: 1rem;
         }
 
-        /* imagens dos vestidos (SVG decorativos) */
-        .img1 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23fae9dd"/><path d="M130 100 L170 100 L180 300 L120 300 Z" fill="%23f0cfb0" /><path d="M110 150 Q150 80 190 150" stroke="%23b38b5d" stroke-width="8" fill="%23fcedd7" /><circle cx="150" cy="130" r="25" fill="%23eaceb0"/><rect x="135" y="200" width="30" height="100" fill="%23e0bea0"/><circle cx="150" cy="290" r="20" fill="%23c6a27a"/><text x="90" y="360" fill="%2397653d" font-family="Arial" font-size="24">✨</text></svg>'); }
-        .img2 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23f5e2d4"/><ellipse cx="150" cy="130" rx="40" ry="50" fill="%23f7d9c0"/><path d="M110 180 Q150 240 190 180" stroke="%239f7e5c" stroke-width="7" fill="%23fceaea"/><rect x="130" y="200" width="40" height="150" fill="%23ebd1b9"/><circle cx="150" cy="360" r="18" fill="%23d4af37"/><text x="100" y="70" fill="%239f7e5c" font-size="30">🎀</text></svg>'); }
-        .img3 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23fef0e6"/><path d="M140 100 L160 100 L180 300 L120 300 Z" fill="%23edd7c5"/><ellipse cx="150" cy="150" rx="35" ry="40" fill="%23f8e0cf"/><rect x="120" y="210" width="60" height="130" fill="%23e7cbb2"/><circle cx="150" cy="360" r="25" fill="%23b38b5d"/><text x="70" y="70" fill="%2397653d" font-size="38">👗</text></svg>'); }
-        .img4 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23fbebdd"/><path d="M125 100 L175 100 L200 300 L100 300 Z" fill="%23f1cfb5"/><circle cx="150" cy="140" r="30" fill="%23f9dcc9"/><rect x="140" y="200" width="20" height="150" fill="%23d4af37"/><circle cx="150" cy="360" r="18" fill="%2397653d"/><text x="210" y="80" fill="%239f7e5c" font-size="28">💎</text></svg>'); }
-
         /* responsividade */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
+            .dress-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .dress-grid {
+                grid-template-columns: 1fr;
+            }
+            .logo-text {
+                font-size: 2rem;
+                border-right: none;
+            }
             .header {
                 flex-direction: column;
                 gap: 15px;
-                text-align: center;
-            }
-            .nav-menu {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .logo-text {
-                border-right: none;
-            }
-            .banner-container {
-                flex-direction: column;
-            }
-            .banner-image {
-                height: 220px;
-                border-radius: 30px 30px 0 0;
             }
         }
     </style>
@@ -390,103 +446,117 @@
 <body>
 
 <header class="header">
-    <!-- Logo criativo -->
+    <!-- Logo maior e mais bonita -->
     <div class="logo">
         <span class="logo-icon"></span>
         <span class="logo-text">Ateliê da Noiva</span>
-        <span class="logo-detail">sonhos em renda</span>
+        <span class="logo-detail">sonhos em camadas</span>
     </div>
 
-    <!-- Menu e FAQ -->
+    <!-- Menu e FAQ (vestidos e acessórios removidos) -->
     <nav class="nav-menu">
         <a href="#">Início</a>
-        <a href="#">Vestidos</a>
-        <a href="#">Acessórios</a>
-        <a href="#">Sobre</a>
+        <a href="#" id="sobre-link">Sobre</a>
+        <!-- ao clicar em Sobre, mostra seção sobre vestidos -->
         <a href="#" class="faq-btn">FAQ</a>
     </nav>
 </header>
 
-<!-- Barra de pesquisa esquerda -->
+<!-- Barra de pesquisa quadrada (sem "busca" escrita) -->
 <div class="search-section">
     <div class="search-wrapper">
-        <input type="text" placeholder="Pesquise seu vestido dos sonhos...">
-        <button>🔍 Buscar</button>
+        <input type="text" placeholder="Pesquise aqui...">
+        <button>🔍</button> <!-- apenas o ícone -->
     </div>
 </div>
 
-<!-- Galeria de vestidos -->
+<!-- Seção Sobre (inicialmente visível, mas pode ser aberta pelo link) -->
+<section class="about-section" id="sobre-secao">
+    <div class="about-content">
+        <h3>✨ Sobre nossos vestidos ✨</h3>
+        <p>
+            <span>👗</span> Cada vestido é pensado para realçar a essência da noiva. Utilizamos rendas importadas, 
+            tecidos fluidos e acabamentos artesanais. Do clássico ao moderno, criamos peças únicas 
+            que contam a sua história. Agende uma visita e experimente a magia! <span>💕</span>
+        </p>
+    </div>
+</section>
+
+<!-- Galeria com exatamente 3 vestidos -->
 <section class="gallery">
-    <h2>✧ Vestidos que contam histórias ✧</h2>
+    <h2>✧ Escolha o seu estilo ✧</h2>
     <div class="dress-grid">
         <div class="dress-card">
             <div class="dress-img img1"></div>
             <div class="dress-info">
-                <div class="dress-name">Clássica Eternidade</div>
-                <div class="dress-desc">Renda francesa e cauda suave. Para um amor que dura para sempre.</div>
+                <div class="dress-name">Clássico Encanto</div>
+                <div class="dress-desc">Renda delicada e mangas longas. Para um visual romântico e atemporal.</div>
             </div>
         </div>
         <div class="dress-card">
             <div class="dress-img img2"></div>
             <div class="dress-info">
-                <div class="dress-name">Boho Chic</div>
-                <div class="dress-desc">Leve, fluido com detalhes em crochê. Perfeito para uma cerimônia ao ar livre.</div>
+                <div class="dress-name">Sereia Glam</div>
+                <div class="dress-desc">Modelo ajustado com brilho sutil. Perfeito para noivas que amam destaque.</div>
             </div>
         </div>
         <div class="dress-card">
             <div class="dress-img img3"></div>
             <div class="dress-info">
-                <div class="dress-name">Princesa Moderna</div>
-                <div class="dress-desc">Tule e brilho sutil. Aquele vestido de conto de fadas com um toque contemporâneo.</div>
-            </div>
-        </div>
-        <div class="dress-card">
-            <div class="dress-img img4"></div>
-            <div class="dress-info">
-                <div class="dress-name">Sereia Real</div>
-                <div class="dress-desc">Modelo ajustado com aplicações de pérolas. Para noivas que amam glamour.</div>
+                <div class="dress-name">Aveludado Sonho</div>
+                <div class="dress-desc">Toque macio e saia evasê. Ideal para casamentos no outono.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Banner casamento com descrição -->
+<!-- Banner casamento com imagem e descrição -->
 <div class="wedding-banner">
     <div class="banner-container">
         <div class="banner-image"></div>
         <div class="banner-text">
-            <h3>O grande momento</h3>
-            <p>O caminho até o altar é único, assim como seu amor. Celebre cada segundo com quem você sempre sonhou.</p>
-            <p style="font-size: 1rem; margin-top: 15px; font-style: normal;">✨ Cerimônia emocionante, lágrimas de alegria e o vestido dos sonhos. ✨</p>
+            <h3>O instante mágico</h3>
+            <p>A troca de olhares, a emoção, o vestido que dança com o vento. Um momento que fica para sempre na memória.</p>
         </div>
     </div>
 </div>
 
-<!-- Rodapé com contato e redes sociais -->
+<!-- Rodapé completo (sem espaços vazios) -->
 <footer class="footer">
     <div class="footer-content">
         <div class="contact-info">
-            <h4>📍 Encontre a gente</h4>
-            <p>📞 (11) 99999-9999</p>
-            <p>📧 contato@ateliedanoiva.com.br</p>
-            <p>🏡 Rua das Flores, 123 - Jardim Primavera</p>
-            <p>🕒 Ter a Sáb: 10h às 19h</p>
+            <h4>📞 Contato</h4>
+            <p>📱 (11) 97777-1234</p>
+            <p>✉️ noiva@ateliedanoiva.com</p>
+            <p>📍 Rua das Hortênsias, 456 - Jardins</p>
+            <p>🕐 Seg a Sáb: 10h às 19h</p>
         </div>
         <div class="social-info">
-            <h4>✨ Siga nossos sonhos</h4>
+            <h4>🌸 Redes sociais</h4>
             <div class="social-icons">
                 <a href="#" title="Instagram">📷</a>
                 <a href="#" title="Facebook">📘</a>
                 <a href="#" title="Pinterest">📌</a>
-                <a href="#" title="WhatsApp">📱</a>
+                <a href="#" title="TikTok">🎵</a>
             </div>
-            <p style="margin-top: 30px; font-style: italic; color: #cfb8a8;">Compartilhe seu momento #AtelieDaNoiva</p>
+            <p style="font-size: 1.2rem; margin-top: 20px;">#AtelieDaNoiva</p>
         </div>
     </div>
+    <div class="footer-note">
+        💞 Ateliê da Noiva - Vestindo sonhos desde 2015 💞
+    </div>
     <div class="copyright">
-        © 2025 Ateliê da Noiva - Todos os direitos reservados. Feito com 👰 para noivas reais.
+        © 2025 Ateliê da Noiva - Todos os direitos reservados.
     </div>
 </footer>
+
+<!-- Script para o link Sobre mostrar a seção (não oculta outras, apenas garante visibilidade) -->
+<script>
+    document.getElementById('sobre-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('sobre-secao').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 
 </body>
 </html>
