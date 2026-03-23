@@ -299,29 +299,16 @@
             box-shadow: 0 15px 30px rgba(248, 165, 178, 0.25);
         }
 
-        /* CORREÇÃO: Classe para imagens dentro de dress-img */
         .dress-img {
             height: 350px;
-            width: 100%;
             background-size: cover;
-            background-position: center;
+            background-position: center 20%;
             background-repeat: no-repeat;
             background-color: #fff1f5;
             border-bottom: 3px solid #ffb6c1;
-            position: relative;
-            overflow: hidden;
         }
 
-        /* Estilo para imagens HTML dentro de dress-img */
-        .dress-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Faz a imagem preencher toda a caixa sem distorcer */
-            object-position: center; /* Centraliza a imagem */
-            display: block;
-        }
-
-        /* Imagens SVG delicadas - mantidas como fallback */
+        /* Imagens SVG delicadas */
         .img1 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="https://centernoivas.com.br/wp-content/uploads/2022/08/vestido-de-noiva-center-noivas-classicos-CS-010-Frente.jpg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23ffe7ed"/><ellipse cx="150" cy="130" rx="45" ry="55" fill="%23ffd9e0"/><path d="M110 180 Q150 250 190 180" stroke="%23b85c6b" stroke-width="8" fill="%23ffeef4"/><rect x="125" y="210" width="50" height="150" fill="%23ffc1cc"/><circle cx="150" cy="370" r="22" fill="%23f8a5b2"/><text x="90" y="90" fill="%23b85c6b" font-size="40">🌸</text></svg>'); }
         .img2 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="https://cdn0.casamentos.com.br/article/5368/original/1280/png/68635-4.jpeg" height="400" fill="%23fcebf0"/><path d="M135 100 L165 100 L185 300 L115 300 Z" fill="%23ffd2dd"/><circle cx="150" cy="140" r="33" fill="%23ffcbd6"/><rect x="130" y="200" width="40" height="150" fill="%23ffb6c4"/><circle cx="150" cy="360" r="25" fill="%23f297ab"/><text x="190" y="70" fill="%23944e5c" font-size="38">💖</text></svg>'); }
         .img3 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="https://www.pronovias.com/media/catalog/product/s/a/sai_b_2.jpg" viewBox="0 0 300 400"><rect width="300" height="400" fill="%23ffe4ea"/><ellipse cx="150" cy="120" rx="40" ry="45" fill="%23ffd0da"/><path d="M120 170 Q150 220 180 170" stroke="%23b35467" stroke-width="7" fill="%23ffeef2"/><rect x="135" y="190" width="30" height="170" fill="%23f5a7b7"/><circle cx="150" cy="370" r="23" fill="%23f28b9f"/><text x="70" y="300" fill="%23b35467" font-size="44">✨</text></svg>'); }
@@ -576,9 +563,7 @@
             </div>
         </div>
         <div class="dress-card">
-            <div class="dress-img img2">
-                <img src="https://img.elo7.com.br/product/685x685/4785BEC/vestido-noiva-sereia-luxo-classic-tule-bordado-decote-cauda-atelier-casa-vians.jpg">
-            </div>
+            <div class="dress-img img2"> <img src="https://img.elo7.com.br/product/685x685/4785BEC/vestido-noiva-sereia-luxo-classic-tule-bordado-decote-cauda-atelier-casa-vians.jpg">  </div>
             <div class="dress-info">
                 <div class="dress-name">Sereia Glam</div>
                 <div class="dress-desc">Modelo ajustado com brilho sutil. Perfeito para noivas que amam destaque.</div>
