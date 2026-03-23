@@ -162,7 +162,60 @@
             color: white;
         }
 
-        /* Sobre (substitui vestidos/acessórios) */
+        /* Seção da guia ATELIÊ DA NOIVA (movida para cima do SOBRE) */
+        .atelie-guide-section {
+            background: linear-gradient(145deg, #fff2f5, #ffeaf0);
+            padding: 2rem 5%;
+            border-top: 3px solid #f8a5b2;
+            border-bottom: 3px solid #f8a5b2;
+            margin: 0.5rem 0 0 0;
+        }
+
+        .atelie-guide-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .atelie-guide-text {
+            flex: 2;
+            min-width: 280px;
+        }
+
+        .atelie-guide-text h2 {
+            font-size: 2.8rem;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #b35467, #f28b9f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(248, 165, 178, 0.3);
+        }
+
+        .atelie-guide-text p {
+            font-size: 1.3rem;
+            color: #a55364;
+            font-style: italic;
+            border-left: 5px solid #f8a5b2;
+            padding-left: 20px;
+        }
+
+        .atelie-guide-icon {
+            flex: 0.5;
+            font-size: 5rem;
+            text-align: right;
+            color: #f8a5b2;
+            filter: drop-shadow(0 0 8px #ffb6c1);
+            min-width: 120px;
+        }
+
+        /* Sobre (agora vem depois da guia Ateliê) */
         .about-section {
             background: #fff8fa;
             padding: 2.5rem 5%;
@@ -440,6 +493,9 @@
                 flex-direction: column;
                 gap: 15px;
             }
+            .atelie-guide-text h2 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
@@ -470,7 +526,20 @@
     </div>
 </div>
 
-<!-- Seção Sobre (inicialmente visível, mas pode ser aberta pelo link) -->
+<!-- GUIA ATELIÊ DA NOIVA (movida para cima da seção SOBRE) -->
+<div class="atelie-guide-section">
+    <div class="atelie-guide-content">
+        <div class="atelie-guide-text">
+            <h2>Ateliê da Noiva</h2>
+            <p>Onde cada detalhe vira memória</p>
+        </div>
+        <div class="atelie-guide-icon">
+            👰🏻‍♀️✨
+        </div>
+    </div>
+</div>
+
+<!-- Seção Sobre (agora vem logo após a guia Ateliê) -->
 <section class="about-section" id="sobre-secao">
     <div class="about-content">
         <h3>✨ Sobre nossos vestidos ✨</h3>
